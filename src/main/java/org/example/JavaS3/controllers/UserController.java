@@ -1,12 +1,11 @@
-package org.example.nguyenngoctran_4454.controllers;
+package org.example.JavaS3.controllers;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.example.nguyenngoctran_4454.entities.Role;
-import org.example.nguyenngoctran_4454.entities.User;
-import org.example.nguyenngoctran_4454.repositories.UserRepository;
-import org.example.nguyenngoctran_4454.services.RoleService;
-import org.example.nguyenngoctran_4454.services.UserService;
+import org.example.JavaS3.entities.User;
+import org.example.JavaS3.repositories.UserRepository;
+import org.example.JavaS3.services.RoleService;
+import org.example.JavaS3.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

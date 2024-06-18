@@ -1,4 +1,4 @@
-package org.example.nguyenngoctran_4454.entities;
+package org.example.JavaS3.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.example</groupId>
-    <artifactId>NguyenNgocTran_4454</artifactId>
+    <artifactId>JavaS3</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>NguyenNgocTran_4454</name>
-    <description>NguyenNgocTran_4454</description>
+    <name>JavaS3</name>
+    <description>JavaS3</description>
     <properties>
         <java.version>22</java.version>
     </properties>

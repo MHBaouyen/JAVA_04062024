@@ -1,10 +1,10 @@
-package org.example.nguyenngoctran_4454;
+package org.example.JavaS3;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NguyenNgocTran4454ApplicationTests {
+class JavaS3ApplicationTests {
 
     @Test
     void contextLoads() {

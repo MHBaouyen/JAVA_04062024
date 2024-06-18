@@ -1,10 +1,10 @@
-package org.example.nguyenngoctran_4454.controllers;
+package org.example.JavaS3.controllers;
 
 import jakarta.validation.Valid;
-import org.example.nguyenngoctran_4454.entities.Role;
+import org.example.JavaS3.entities.Role;
 
-import org.example.nguyenngoctran_4454.services.RoleService;
-import org.example.nguyenngoctran_4454.services.UserService;
+import org.example.JavaS3.services.RoleService;
+import org.example.JavaS3.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @Controller
-@RequestMapping("/role")// đươờng dẫn cha
+@RequestMapping("/role")
 public class RoleController {
     @Autowired
     private RoleService roleService;
@@ -28,8 +28,8 @@ public class RoleController {
     @GetMapping("")
     public String showRoleList(Model model) {
         List<Role> roles = roleService.findAll();
-        model.addAttribute("roles", roles);// Đảm bảo tên "roles" khớp với tên trong template
-        return "/roles/list";// đường dẫn của resoure/roles/name.html
+        model.addAttribute("roles", roles);
+        return "/roles/list";
     }
     @GetMapping("/add")
     public String showAddForm(Model model) {
@@ -51,19 +51,21 @@ public class RoleController {
     public String showEditForm(@PathVariable Integer id, Model model) {
         Role role = roleService.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Invalid product Id:" + id));
-            model.addAttribute("role", role);
-            return "roles/update";
+        model.addAttribute("role", role);
+        return "roles/update";
     }
+
     @PostMapping("/update/{id}")
     public String updateRole(@PathVariable Integer id, @Valid Role role, BindingResult bindingResult)
     {
-        if (bindingResult.hasErrors()) {
+         if (bindingResult.hasErrors()) {
 
             return "/roles/update";
         }
-        role.setIdRole(id);
-        roleService.updateRole(role);
-        return "redirect:/role";
+
+         role.setIdRole(id);
+         roleService.updateRole(role);
+         return "redirect:/role";
     }
     @GetMapping("/delete/{id}")
     public String deleteRole(@PathVariable Integer id) {

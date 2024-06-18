@@ -1,6 +1,6 @@
-package org.example.nguyenngoctran_4454.repositories;
+package org.example.JavaS3.repositories;
 
-import org.example.nguyenngoctran_4454.entities.User;
+import org.example.JavaS3.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

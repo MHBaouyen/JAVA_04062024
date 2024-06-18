@@ -1,9 +1,9 @@
-package org.example.nguyenngoctran_4454.services;
+package org.example.JavaS3.services;
 
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import org.example.nguyenngoctran_4454.entities.Role;
-import org.example.nguyenngoctran_4454.repositories.RoleRepository;
+import org.example.JavaS3.entities.Role;
+import org.example.JavaS3.repositories.RoleRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

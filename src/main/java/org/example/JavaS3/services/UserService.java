@@ -1,10 +1,10 @@
-package org.example.nguyenngoctran_4454.services;
+package org.example.JavaS3.services;
 
 
 import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
-import org.example.nguyenngoctran_4454.entities.User;
-import org.example.nguyenngoctran_4454.repositories.UserRepository;
+import org.example.JavaS3.entities.User;
+import org.example.JavaS3.repositories.UserRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
